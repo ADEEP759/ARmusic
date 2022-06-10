@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,200&display=swap');
+@import url('http://oflisback.github.io/react-favicon/img/github.ico');
+body{
+    background-color: rgb(239, 247, 242);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+font-family: 'Varela', sans-serif;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: rgb(7, 50, 3);
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 46px ;
+    padding: 0 9px;
+}
+.brand{
+    display:flex ;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.container{
+    
+    min-height: 73vh;
+    background-color: black;
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    margin: 10px  100px 10px 300px;
+    width: 60%;
+    border-radius: 12px;
+
+    background-image: url('bg.jpg');
+    
+}
+.bottom{
+    position: sticky;
+    height: 150px;
+    background-color: rgb(3, 49, 3);
+    bottom: 0;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.icons{
+    margin: 17px 0px;
+}
+.icons i{
+    padding: 0 5px;
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 180vh;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.songItem{
+    padding-left: 0px;
+    height: 50px;
+    display: flex;
+    background-color: white;
+    opacity:0.7;
+    width: 40%;
+    color: black;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+.songItem img{
+    width: 15%;
+    margin: 0 10px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 10px;
+}
+.fa-solid  {
+    cursor: pointer; padding-right: 5px;
+}
+.songInfo{
+    position: absolute;
+    left: 11vw;
+    font-family: 'Public Sans', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: 0.4s ease-in;
+}
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  /* Modify the appearance of the slider */
+  .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: rgb(170, 201, 133);
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+   
+  /* Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb,
+  .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+   
+  /* Change the opacity when mouse is hovered */
+#volumeBar{
+    position: absolute;
+    right: 11vw;
+}
+ 
